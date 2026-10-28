@@ -195,7 +195,6 @@ class ExamplesCrossImportChecker {
     'packages/flutter/examples/api/lib/widgets/raw_tooltip/raw_tooltip.0.dart',
     'packages/flutter/examples/api/lib/widgets/form/form.1.dart',
     'packages/flutter/examples/api/lib/widgets/form/form.0.dart',
-    'packages/flutter/examples/api/lib/widgets/layout_builder/layout_builder.0.dart',
     'packages/flutter/examples/api/lib/widgets/tap_region/text_field_tap_region.0.dart',
     'packages/flutter/examples/api/lib/widgets/restoration/restoration_mixin.0.dart',
     'packages/flutter/examples/api/lib/widgets/app/widgets_app.widgets_app.0.dart',

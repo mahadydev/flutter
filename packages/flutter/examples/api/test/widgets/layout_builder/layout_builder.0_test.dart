@@ -15,14 +15,12 @@ void main() {
     expect(containerFinder, findsNWidgets(2));
   });
   testWidgets('has one container when narrow', (WidgetTester tester) async {
-    await tester.pumpWidget(
-      ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 400),
-        child: const example.LayoutBuilderExampleApp(),
-      ),
-    );
+    tester.view.physicalSize = const Size(400, 800);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(const example.LayoutBuilderExampleApp());
 
     final Finder containerFinder = find.byType(Container);
-    expect(containerFinder, findsNWidgets(2));
+    expect(containerFinder, findsOneWidget);
   });
 }
